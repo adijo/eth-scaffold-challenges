@@ -32,7 +32,7 @@ contract Staker {
   //  It should either call `exampleExternalContract.complete{value: address(this).balance}()` to send all the value
   function execute() public isDeadlineUp notCompleted {
 
-    if(timeLeft() > 0 && address(this).balance >= threshold) {
+    if(address(this).balance >= threshold) {
         exampleExternalContract.complete{value: address(this).balance}();
     }
     else {
