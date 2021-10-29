@@ -36,5 +36,8 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "dependencies": {
+    "babel-plugin-syntax-class-properties": "^6.13.0"
   }
 }
